@@ -503,7 +503,7 @@ def new_case_form():
     with st.form("case_form", clear_on_submit=True):
         # Section 1: Channel Selection
         channel = st.radio("How was this issue reported?", CHANNELS, horizontal=True)
-    attachments = []
+        attachments = []
         
         # Section 2: Reporter Information
         name = st.text_input("Full Name", help="Enter the reporter's full name")
